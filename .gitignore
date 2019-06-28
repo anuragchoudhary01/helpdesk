@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+yarn-error.log
+dist/
+.cache/
+.vscode/
+.pytest_cache/
+.idea/
+*.log*
+*pyc
+.vagrant/*
+.github/CODEOWNERS

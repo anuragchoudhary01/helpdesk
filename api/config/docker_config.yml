@@ -1,0 +1,21 @@
+mysql:
+  host: 127.0.0.1
+  port: 5432
+  user: root
+  pw: test
+  db: helpdesk
+  
+log:
+  log_name: response.log
+  log_sieze_bytes: 5000
+  ROLLOVER: midnight
+  INTERVAL: 1
+  BACKUP_COUNT: 30
+
+email-sever:
+  server: smtp.gmail.com
+  username: ''
+  password: ''
+  use_ssl: False
+  use_tls: True
+  port: 587
