@@ -1,9 +1,9 @@
 mysql:
-  host: 127.0.0.1
+  host: 10.10.20.76
   port: 5432
   user: root
   pw: test
-  db: helpdesk
+  db: helpdesk_new
 
 log:
   log_name: response.log
