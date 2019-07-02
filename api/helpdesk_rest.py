@@ -1,5 +1,6 @@
-from api import create_app, register_stored_procedures
+# from app import create_app, register_stored_procedures
 # import api.datamodels as dm
+from app import create_app
 
 app = create_app('config/config.yml')
 

@@ -10,6 +10,8 @@ flask-cors = "*"
 sqlalchemy = "*"
 flask-sqlalchemy = "*"
 flask-mail = "*"
+flake8 = "*"
+flask-restplus = "*"
 
 [dev-packages]
 
