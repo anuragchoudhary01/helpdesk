@@ -19,3 +19,6 @@ email-server:
   use_ssl: False
   use_tls: True
   port: 587
+
+swagger:
+  SWAGGER_DOC_URL: '/api'
