@@ -13,10 +13,10 @@ Swagger document page:  `http://127.0.0.1:5000/swagger`
 
 ** Run with gunicorn **
 
-In  webapp/
+In  api/
 
 ```
-$ gunicorn -w 4 -b 127.0.0.1:5000 run:app
+$ gunicorn -w 4 -b 127.0.0.1:5000 helpdeskapp
 
 ```
 
@@ -27,8 +27,8 @@ $ gunicorn -w 4 -b 127.0.0.1:5000 run:app
 ### Run with Docker
 
 ```
-$ docker build -t flask-example .
+$ docker build -t helpdesk:v1 .
 
-$ docker run -p 5000:5000 --name flask-example flask-example 
+$ docker run -p 3030:3030 --name helpdesk helpdesk 
  
 ```
