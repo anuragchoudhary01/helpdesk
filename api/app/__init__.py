@@ -2,7 +2,7 @@ import sys
 import yaml
 
 # from api.datamodel import db
-from api.utils.log_utils import logger
+from utils.log_utils import logger
 
 from flask import Flask
 from flask_cors import CORS
