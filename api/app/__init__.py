@@ -1,7 +1,7 @@
 import sys
 import yaml
 
-# from api.datamodel import db
+from api.datamodel import db
 from utils.log_utils import logger
 
 from flask import Flask
@@ -46,7 +46,7 @@ def create_app(config=None):
     app.config['SWAGGER_UI_DOC_EXPANSION'] = 'list'
     app.config['SWAGGER_DOC_URL'] = cfg['swagger']['SWAGGER_DOC_URL']
 
-    # db.init_app(app)
+    db.init_app(app)
 
     # deal with CORS
     CORS(app)
