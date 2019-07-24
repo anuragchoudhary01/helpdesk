@@ -1,6 +1,7 @@
 from flask_restplus import Resource, Api, fields, Namespace, abort
 from flask import request, session, make_response, redirect, Response, jsonify
-from api.middleware.crud import insert_status
+from api.middleware.exception_handler import exceptionhander
+from api.middleware.crud import insert_status, insert_type
 
 
 api = Namespace('Ticket', description='Ticket Operations')
@@ -50,3 +51,18 @@ class Status(Resource):
     def post(self, status):
         insert_status(status=status)
         return jsonify({'status': status})
+
+@api.route('/type/<string:type>')
+class Type(Resource):
+    """
+    To update the ticket type
+    """
+
+    def __init__(self,Resource):
+        self.api = api
+
+    @api.doc(description='To add the type of the ticket')
+    def post(self, type):
+        insert_type(type=type)
+        return jsonify({'status': 'success',
+                        'ticket_type': type})
