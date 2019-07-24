@@ -13,6 +13,12 @@ flask-mail = "*"
 flake8 = "*"
 flask-restplus = "*"
 gunicorn = "*"
+mysqlclient = "*"
+pymysql = "*"
+python3-mysqldb = "*"
+python-mysqldb = "*"
+mysql-python = "*"
+mysql-server = "*"
 
 [dev-packages]
 
