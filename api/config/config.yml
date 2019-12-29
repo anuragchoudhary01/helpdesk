@@ -1,9 +1,9 @@
 mysql:
-  host: 127.0.0.1
+  host: 10.10.20.76
   port: 5432
   user: root
   pw: test
-  db: helpdesk
+  db: helpdesk_new
 
 log:
   log_name: response.log
@@ -19,3 +19,6 @@ email-server:
   use_ssl: False
   use_tls: True
   port: 587
+
+swagger:
+  SWAGGER_DOC_URL: '/api'
